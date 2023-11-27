@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Administration from './pages/Administration/Administration';
 import Authorization from './pages/Authorization/Authorization';
 import Registration from './pages/Registration/Registration';
-import ContentPage from './pages/Content/Content';
+import Content from './pages/Content/Content';
 import Error from './pages/Error/Error';
 const App = () => {
     return (
@@ -13,7 +13,7 @@ const App = () => {
                     <Route path="/" element={<Authorization />} />
                     <Route path="/Authorization" element={<Authorization />} />
                     <Route path="/Registration" element={<Registration />} />
-                    <Route path="/ContentPage" element={<ContentPage />} />
+                    <Route path="/Content" element={<Content />} />
                     <Route
                         path="/Administration"
                         element={<Administration />}
