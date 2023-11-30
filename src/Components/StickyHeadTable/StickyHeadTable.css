@@ -1,0 +1,9 @@
+.css-cuefkz-MuiContainer-root {
+    display: flex;
+    justify-content: center;
+}
+
+section > div {
+    width: 99%;
+    height: 99%;
+}

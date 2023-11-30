@@ -1,7 +1,14 @@
 import React from 'react';
+import HeaderNavBar from '../../Components/HeaderNavBar/HeaderNavBar';
 
 const Administration = () => {
-    return <div>Administration</div>;
+    return (
+        <>
+            <section>
+                <HeaderNavBar />
+            </section>
+        </>
+    );
 };
 
 export default Administration;

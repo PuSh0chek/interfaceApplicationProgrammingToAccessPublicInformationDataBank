@@ -1,7 +1,14 @@
 import React from 'react';
+import HeaderNavBar from '../../Components/HeaderNavBar/HeaderNavBar';
 
 const Registration = () => {
-    return <div>Registration</div>;
+    return (
+        <>
+            <header>
+                <HeaderNavBar />
+            </header>
+        </>
+    );
 };
 
 export default Registration;

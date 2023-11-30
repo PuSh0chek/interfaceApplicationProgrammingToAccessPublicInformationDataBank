@@ -1,0 +1,9 @@
+nav > section {
+    display: flex;
+    justify-content: center;
+}
+
+section + section {
+    display: flex;
+    justify-content: center;
+}
