@@ -7,3 +7,80 @@ ul {
 a {
     text-decoration: none;
 }
+
+a > button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #000000;
+    background: #f7f7f7;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+button::before {
+    content: '';
+    background: linear-gradient(
+        45deg,
+        #00ffea,
+        #00ffaa,
+        #00ff95,
+        #00ffff,
+        #00ffd5,
+        #00ff9d,
+        #008cff,
+        #00ffbf,
+        #0077ff
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+button:active {
+    color: #000000;
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
